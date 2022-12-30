@@ -1,0 +1,25 @@
+
+
+Utilitaires de sécurité qui peuvent être utiles pour améliorer la sécurité du système Linux, avec une brève description de leurs fonctions :
+
+
+
+-ClamAV : ClamAV est un scanner de virus open source pour Linux. Il peut être utilisé pour détecter et éliminer les virus, les logiciels espions et d'autres logiciels malveillants de votre système.
+
+-Nessus : Nessus est un outil de scan de vulnérabilité pour Linux. Il peut être utilisé pour analyser votre système à la recherche de vulnérabilités et vous fournir des rapports détaillés sur les résultats.
+
+-OpenVAS : OpenVAS est un autre outil de scan de vulnérabilité open source pour Linux. Il peut être utilisé pour identifier les failles de sécurité dans votre système et vous aider à y remédier.
+
+-Tripwire : Tripwire est un outil de détection de modifications de fichiers pour Linux. Il peut être utilisé pour surveiller les fichiers sur votre système et détecter toute modification non autorisée.
+
+-Aide à la décision de sécurité : -SELinux est un système de contrôle d'accès de sécurité qui peut être utilisé pour renforcer la sécurité de votre système en limitant les actions que les utilisateurs et les processus peuvent effectuer.
+
+-Logcheck : Logcheck est un outil qui surveille les journaux du système et vous alerte des événements anormaux. Il peut être utile pour détecter les comportements suspects ou les attaques en cours.
+
+-Fail2ban : Fail2ban est un utilitaire de sécurité qui surveille les journaux du système et bloque les adresses IP suspectes qui tentent de se connecter de manière abusive.(evite les ddos)
+
+-AppArmor : AppArmor est un système de contrôle d'accès de sécurité qui peut être utilisé pour limiter les actions que les applications peuvent effectuer sur votre système.
+
+-Chkrootkit : Chkrootkit est un utilitaire en ligne de commande qui vérifie la présence de rootkits sur votre système.
+
+-Rkhunter : Rkhunter (Rootkit Hunter) est un autre utilitaire en ligne de commande qui vérifie la présence de rootkits et de logiciels malveillants sur votre système.
