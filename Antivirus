@@ -1,0 +1,18 @@
+ClamAV : ClamAV est un scanner de virus open source pour Linux. Il peut être utilisé pour détecter et éliminer les virus, les logiciels espions et d'autres logiciels malveillants de votre système.
+
+Commande : 
+freshclam : met à jour la base placées dans /var/lib/clamav
+clamscan : permet de rechercher des virus; ex : clamscan -v /usr/bin
+clamscan --help
+
+Autres commandes de base de ClamAV  :
+
+clamscan : Cette commande permet de scanner un fichier ou un répertoire à la recherche de logiciels malveillants. Par exemple, pour scanner le répertoire "documents", vous pouvez utiliser la commande suivante : clamscan documents.
+
+clamscan -r : Cette commande permet de scanner récursivement un répertoire et tous ses sous-répertoires à la recherche de logiciels malveillants. Par exemple, pour scanner récursivement le répertoire "documents", vous pouvez utiliser la commande suivante : clamscan -r documents.
+
+clamscan -i : Cette commande permet de scanner les fichiers infectés uniquement et d'ignorer les fichiers sains. Par exemple, pour scanner le répertoire "documents" et afficher uniquement les fichiers infectés, vous pouvez utiliser la commande suivante : clamscan -i documents.
+
+clamscan -v : Cette commande permet de scanner les fichiers en mode verbeux, c'est-à-dire qu'elle affiche des informations détaillées sur chaque fichier scanné. Par exemple, pour scanner le répertoire "documents" en mode verbeux, vous pouvez utiliser la commande suivante : clamscan -v documents.
+
+clamscan -u : Cette commande permet de mettre à jour la base de données de virus de ClamAV à partir du serveur de mise à jour. Par exemple, pour mettre à jour la base de données de virus de ClamAV, vous pouvez utiliser la commande suivante : clamscan -u.
