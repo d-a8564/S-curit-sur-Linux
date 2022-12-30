@@ -1,0 +1,22 @@
+Un rootkit est un logiciel malveillant conçu pour s'infiltrer dans un système informatique et obtenir des privilèges de contrôle à un niveau élevé, généralement en tant que "root" sous Unix ou en tant qu'administrateur sous Windows. 
+
+Chkrootkit est une solution, c'est un outils simple permettant de rechercher la presence de rootkits les plus connus et récents, il faut le mettre à jour régulierement
+
+Rkhunter est encore plus puissant, et se met à jour seul
+---------------------------------------------------------------------------------------------------------------------------------
+
+Quelques commandes de base de chkrootkit et rkhunter à utiliser :
+
+chkrootkit : Cette commande permet de lancer une analyse de chkrootkit et de rechercher des rootkits sur le système.
+
+rkhunter --check : Cette commande permet de lancer une analyse de rkhunter et de rechercher des rootkits sur le système.
+
+chkrootkit -l : Cette commande permet de lister les rootkits que chkrootkit est capable de détecter.
+
+rkhunter --list : Cette commande permet de lister les rootkits que rkhunter est capable de détecter.
+
+chkrootkit -u : Cette commande permet de mettre à jour la base de données de rootkits de chkrootkit à partir du serveur de mise à jour.
+
+rkhunter --update : Cette commande permet de mettre à jour la base de données de rootkits de rkhunter à partir du serveur de mise à jour.
+
+Documentation en utilisant les commandes chkrootkit --help et rkhunter --help
