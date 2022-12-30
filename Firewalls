@@ -1,0 +1,79 @@
+- Netfilter = Firewall agissant sur les couches du noyau 2, 3 ,4 OSI.
+Netfilter est un framework de pare-feu pour Linux qui permet de configurer et de gérer les règles de filtrage de paquets réseau, mais il n'est pas conçu pour être utilisé directement par les utilisateurs finaux.
+
+- UFW (Commande en bas de page) est un outil de gestion de pare-feu pour Linux qui simplifie l'utilisation de Netfilter et offre une interface en ligne de commande intuitive pour configurer et gérer les règles de filtrage du pare-feu.
+
+----------------------------------------------------------------------------------------------
+
+- Alternatives à pfSense, qui sont des systèmes d'exploitation open source utilisés pour créer des passerelles de réseau et des routeurs. Voici quelques exemples d'alternatives à pfSense :
+
+VyOS : VyOS est un système d'exploitation open source basé sur Debian qui peut être utilisé pour créer des passerelles de réseau et des routeurs.
+
+OPNSense : Fork de pfsense, OPNSense est un autre système d'exploitation open source qui peut être utilisé pour créer des passerelles de réseau et des routeurs.
+
+Smoothwall : Smoothwall est un système d'exploitation open source qui peut être utilisé pour créer des passerelles de réseau et des routeurs.
+
+ZeroShell : ZeroShell est un système d'exploitation open source qui peut être utilisé pour créer des passerelles de réseau et des routeurs.
+
+Sophos UTM : Sophos UTM est un système d'exploitation open source qui peut être utilisé pour créer des passerelles de réseau et des routeurs.
+
+----------------------------------------------------------------------------------------------
+
+Cinq alternatives à UFW sur Linux :
+
+Firewalld : Firewalld est un outil de gestion de pare-feu qui fonctionne de manière dynamique et peut être utilisé pour configurer et gérer les règles de filtrage du pare-feu.
+
+Shorewall : Shorewall est un outil de gestion de pare-feu open source qui permet de configurer et de gérer facilement les règles de filtrage du pare-feu.
+
+CSF (ConfigServer Firewall) : CSF est un pare-feu de script de gestion de serveur qui permet de configurer et de gérer facilement les règles de filtrage du pare-feu.
+
+Gufw : Gufw est une interface graphique pour UFW qui permet de configurer et de gérer facilement les règles de filtrage du pare-feu.
+
+IPtables : IPtables est le pare-feu de Linux par défaut qui permet de configurer et de gérer les règles de filtrage du pare-feu. Il est configuré en utilisant des commandes en ligne de commande.
+
+----------------------------------------------------------------------------------------------
+**UFW**
+
+Quelques commandes de base de UFW à utiliser :
+
+ufw enable : Cette commande permet d'activer UFW et de commencer à filtrer le trafic de réseau.
+
+ufw disable : Cette commande permet de désactiver UFW et de cesser de filtrer le trafic de réseau.
+
+ufw default deny : Cette commande permet de refuser tout le trafic de réseau entrant par défaut, à moins qu'il ne soit explicitement autorisé par une règle de pare-feu.
+
+ufw default allow : Cette commande permet d'autoriser tout le trafic de réseau entrant par défaut, à moins qu'il ne soit explicitement refusé par une règle de pare-feu.
+
+ufw allow <port>/<protocole> : Cette commande permet d'autoriser le trafic entrant sur un port particulier et avec un protocole particulier. Par exemple, pour autoriser le trafic HTTP entrant sur le port 80, vous pouvez utiliser la commande suivante : ufw allow 80/tcp
+
+ufw deny <port>/<protocole> : Cette commande permet de refuser le trafic entrant sur un port particulier et avec un protocole particulier. Par exemple, pour refuser le trafic FTP entrant sur le port 21, vous pouvez utiliser la commande suivante : ufw deny 21/tcp
+
+----------------------------------------------------------------------------------------------
+
+**Netfilter**
+
+Quelques commandes de base de Netfilter à utiliser :
+
+iptables : Cette commande permet de configurer les règles de pare-feu de Netfilter. Par exemple, pour autoriser le trafic HTTP entrant sur le port 80, vous pouvez utiliser la commande suivante : iptables -A INPUT -p tcp --dport 80 -j ACCEPT.
+
+iptables-save : Cette commande permet de sauvegarder les règles de pare-feu actuelles de Netfilter dans un fichier de configuration.
+
+iptables-restore : Cette commande permet de charger les règles de pare-feu sauvegardées à partir d'un fichier de configuration.
+
+iptables -L : Cette commande permet de lister les règles de pare-feu actuelles de Netfilter.
+
+iptables -F : Cette commande permet de supprimer toutes les règles de pare-feu actuelles de Netfilter.
+
+--------------------------------------------------------------------------------------
+
+Quelques commandes de base de Firewalld à utiliser :
+
+firewall-cmd : Cette commande permet de configurer les règles de pare-feu de Firewalld. Par exemple, pour autoriser le trafic HTTP entrant sur le port 80, vous pouvez utiliser la commande suivante : firewall-cmd --add-port=80/tcp.
+
+firewall-cmd --reload : Cette commande permet de recharger les règles de pare-feu de Firewalld sans avoir à redémarrer le service.
+
+firewall-cmd --list-all : Cette commande permet de lister les règles de pare-feu actuelles de Firewalld.
+
+firewall-cmd --permanent --add-service=http : Cette commande permet d'autoriser le trafic HTTP entrant sur le port 80 de manière permanente, c'est-à-dire que les règles seront sauvegardées et appliquées lorsque le système sera redémarré.
+
+firewall-cmd --permanent --remove-service=http : Cette commande permet de refuser le trafic HTTP entrant sur le port 80 de manière permanente, c'est-à-dire que les règles seront sauvegardées et appliquées lorsque le système sera redémarré.
